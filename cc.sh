@@ -2,7 +2,6 @@
 
 # Script para gerar Cartões de Crédito Validos.
 # SSH TLS
-# Raphael Frajuca
 if [ "$1" = "" ]
 then
 echo "Usage:"
