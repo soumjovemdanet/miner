@@ -1,19 +1,17 @@
 #!/bin/sh -e
 clear
-# Copyright Raphael Frajuca
 # SSH TLS
-# Miner por: noncepool
 
 bash=$(echo $BASH)
 
 if [ "$bash" = "/bin/bash" ]
 then
-echo "			\033[41;1;37m Minerar BTC $versao \033[0m "				
+echo "			\033[41;1;37m Minerar DGB $versao \033[0m "				
 sleep 1
 echo "$verde Forma de USO: \033[0m"
-echo "sudo sh $0 $vermelho Carteira de BTC \033[0m  \n "
+echo "sudo sh $0 $vermelho Carteira de DGB \033[0m  \n "
 echo "$verde Exemplo:\033[0m"
-echo "sudo sh $0 $vermelho 13kjAfoVMV23TJWBwqkGuAwwdmhFanEL9q \033[0m   \n"
+echo "sudo sh $0 $vermelho dgb1q5amjl97wta2avarpntlkc4kw6x8djkwut0ds2j \033[0m   \n"
 exit 0
 fi
 
@@ -41,35 +39,32 @@ wallet=$1
 
 if [ "$1" = ""  ]
 then
-echo "			\033[41;1;37m Minerar BTC $versao \033[0m "				
+echo "			\033[41;1;37m Minerar DGB  $versao \033[0m "				
 sleep 1
 echo "$verde Forma de USO: \033[0m"
-echo "sudo sh $0 $vermelho Carteira de BTC \033[0m  \n "
+echo "sudo sh $0 $vermelho Carteira de DGB \033[0m  \n "
 echo "$verde Exemplo:\033[0m"
-echo "sudo sh $0 $vermelho 13kjAfoVMV23TJWBwqkGuAwwdmhFanEL9q \033[0m   \n"
+echo "sudo sh $0 $vermelho dgb1q5amjl97wta2avarpntlkc4kw6x8djkwut0ds2j \033[0m   \n"
 exit 0
 fi
 
-echo "			\033[41;1;37m Minerar BTC $versao \033[0m "	
+echo "			\033[41;1;37m Minerar DGB $versao \033[0m "	
 sleep 1
-echo "Carteira a ser Enviada os Bitcoins Minerados: $verde$wallet\033[0m   "
+echo "Carteira a ser Enviada os DigiByte Minerados: $verde$wallet\033[0m   "
 sleep 1
 
 echo "\033[44;1;37m Termos e Condições:     \033[0m "
 sleep 2
 
-echo "$cinzaClaro	 * Minerar BTC \033[0m   \n"
+echo "$cinzaClaro	 * Minerar DGB \033[0m   \n"
 echo "$cinzaClaro	 * Caso aceite esses termos, fique ciente de que: \033[0m "
 echo "$cinzaClaro	 * A utilização/modificação desse Script e de sua Total Responsabilidade, \033[0m "
-echo "$cinzaClaro	 * sendo que eu, Raphael Frajuca, não me responsabilizo por danos que possam  \033[0m "
+echo "$cinzaClaro	 * sendo que eu, Gilmar, não me responsabilizo por danos que possam  \033[0m "
 echo "$cinzaClaro	 * ser causados a seu sistema caso esse script seja mal utilizado/utilizado de forma  \033[0m "
 echo "$cinzaClaro	 * incorreta ou Modificado. \033[0m "
-echo "$cinzaClaro	 * Esse script tem o fim de tentar ajudar a minerar Bitcoins usando o Algoritimo YESCRYPT. \033[0m "
+echo "$cinzaClaro	 * Esse script tem o fim de tentar ajudar a minerar DigiByte usando o Algoritimo YESCRYPT. \033[0m "
 echo "$cinzaClaro	 * QUALQUER pessoa tem a permissão do autor de adaptar esse Script para seus requisitos \033[0m "
-echo "$cinzaClaro	 * e Melhorar esse script por sí próprio a fim de ajudar a Comunidade. \033[0m "
-echo "$cinzaClaro	 * Esse script pode ser usado a fins comerciais, mas NUNCA pode ser Vendido/Alugado,  \033[0m "
 echo "$cinzaClaro	 * somente ser usado a beneficio próprio ou da Comunidade. \033[0m \n"
-echo "$cinzaClaro        * Caso não aceite esses termos, encerre esse Script AGORA. \033[0m "
 
 sleep 10
 
